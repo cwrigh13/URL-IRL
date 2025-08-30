@@ -1,0 +1,61 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F3F4F6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+  
+  <!-- App Interface Mockup -->
+  <rect x="100" y="50" width="600" height="500" rx="20" fill="url(#card)" stroke="#E5E7EB" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="120" y="70" width="560" height="60" rx="10" fill="#F8FAFC"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">Georges River Reads</text>
+  
+  <!-- Language Selector -->
+  <rect x="120" y="150" width="120" height="40" rx="8" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1"/>
+  <text x="180" y="175" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#1E40AF">English</text>
+  
+  <!-- Reading Timer -->
+  <rect x="120" y="210" width="560" height="80" rx="12" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="1"/>
+  <text x="400" y="235" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#0C4A6E">Reading Timer</text>
+  <text x="400" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#0369A1">25:30</text>
+  
+  <!-- Challenge Section -->
+  <rect x="120" y="310" width="270" height="120" rx="12" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1"/>
+  <text x="255" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#92400E">August Challenge</text>
+  <text x="255" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#92400E">Read 500 minutes</text>
+  <rect x="140" y="375" width="210" height="8" rx="4" fill="#F3F4F6"/>
+  <rect x="140" y="375" width="126" height="8" rx="4" fill="#10B981"/>
+  <text x="255" y="395" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#065F46">252/500 min</text>
+  
+  <!-- Community Events -->
+  <rect x="410" y="310" width="270" height="120" rx="12" fill="#E0E7FF" stroke="#6366F1" stroke-width="1"/>
+  <text x="545" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#3730A3">Community Events</text>
+  <text x="545" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#3730A3">Bilingual Story Time</text>
+  <text x="545" y="380" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#3730A3">Tomorrow 10:00 AM</text>
+  <text x="545" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#3730A3">Georges River Library</text>
+  
+  <!-- Book Recommendations -->
+  <rect x="120" y="450" width="560" height="80" rx="12" fill="#F3E8FF" stroke="#A855F7" stroke-width="1"/>
+  <text x="400" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#581C87">Recommended for You</text>
+  <text x="400" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#581C87">"The Arrival" by Shaun Tan - Bilingual Edition</text>
+  
+  <!-- Icons -->
+  <circle cx="150" cy="100" r="15" fill="#3B82F6"/>
+  <text x="150" y="107" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">📚</text>
+  
+  <circle cx="650" cy="100" r="15" fill="#10B981"/>
+  <text x="650" y="107" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">🏆</text>
+  
+  <!-- Multilingual Indicators -->
+  <text x="400" y="580" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">🌍 Multilingual • 📱 Mobile-First • ♿ Accessible</text>
+</svg>
