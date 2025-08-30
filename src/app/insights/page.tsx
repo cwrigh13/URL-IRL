@@ -1,0 +1,54 @@
+import type { Metadata } from "next";
+import { InsightsHero, InsightsGrid, InsightsNewsletter } from "@/components/sections/insights";
+
+export const metadata: Metadata = {
+  title: "Insights | Library Technology Blog | The Librarian Who Codes",
+  description: "Stay updated with the latest insights on library technology, digital transformation, and software solutions. Expert perspectives from a librarian who codes.",
+  keywords: [
+    "library technology insights",
+    "library technology blog",
+    "library digital transformation",
+    "library software insights",
+    "library technology trends",
+    "library IT blog",
+    "library technology articles",
+    "library software blog",
+    "library digital services insights",
+    "library technology Australia"
+  ],
+  openGraph: {
+    title: "Insights | Library Technology Blog | The Librarian Who Codes",
+    description: "Stay updated with the latest insights on library technology, digital transformation, and software solutions. Expert perspectives from a librarian who codes.",
+    url: 'https://librarianwhocodes.com.au/insights',
+    siteName: 'The Librarian Who Codes',
+    images: [
+      {
+        url: '/insights-hero.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Library Technology Insights - The Librarian Who Codes',
+      },
+    ],
+    locale: 'en_AU',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Insights | Library Technology Blog | The Librarian Who Codes",
+    description: "Stay updated with the latest insights on library technology, digital transformation, and software solutions.",
+    images: ['/insights-hero.jpg'],
+  },
+  alternates: {
+    canonical: '/insights',
+  },
+};
+
+export default function InsightsPage() {
+  return (
+    <main>
+      <InsightsHero />
+      <InsightsGrid />
+      <InsightsNewsletter />
+    </main>
+  );
+}
