@@ -52,6 +52,12 @@ const blogPosts = {
   }
 };
 
+export async function generateStaticParams() {
+  return Object.keys(blogPosts).map((id) => ({
+    id: id,
+  }));
+}
+
 export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
   const post = blogPosts[parseInt(params.id) as keyof typeof blogPosts];
   

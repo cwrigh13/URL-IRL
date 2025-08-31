@@ -7,6 +7,12 @@ interface CaseStudyPageProps {
   params: { id: string };
 }
 
+export async function generateStaticParams() {
+  return caseStudies.map((study) => ({
+    id: study.id,
+  }));
+}
+
 export async function generateMetadata({ params }: CaseStudyPageProps): Promise<Metadata> {
   const caseStudy = caseStudies.find(study => study.id === params.id);
   
