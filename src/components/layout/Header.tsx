@@ -36,7 +36,7 @@ export default function Header() {
               href="/about"
               className="text-neutral-700 hover:text-primary-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
             >
-              My Story
+              Our Story
             </Link>
             <Link
               href="/services"
@@ -57,16 +57,6 @@ export default function Header() {
               Insights
             </Link>
           </nav>
-
-          {/* Desktop CTA Button */}
-          <div className="hidden md:block">
-            <Link
-              href="/contact"
-              className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200 shadow-sm hover:shadow-md"
-            >
-              Book a Consultation
-            </Link>
-          </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -110,7 +100,7 @@ export default function Header() {
                 className="block px-3 py-2 text-base font-medium text-neutral-700 hover:text-primary-600 hover:bg-neutral-50 rounded-md transition-colors duration-200"
                 onClick={closeMenu}
               >
-                My Story
+                Our Story
               </Link>
               <Link
                 href="/services"
@@ -133,15 +123,6 @@ export default function Header() {
               >
                 Insights
               </Link>
-              <div className="pt-4">
-                <Link
-                  href="/contact"
-                  className="block w-full bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium text-center transition-colors duration-200 shadow-sm hover:shadow-md"
-                  onClick={closeMenu}
-                >
-                  Book a Consultation
-                </Link>
-              </div>
             </div>
           </div>
         )}
