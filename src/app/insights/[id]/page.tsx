@@ -58,8 +58,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
-  const post = blogPosts[parseInt(params.id) as keyof typeof blogPosts];
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const { id } = await params;
+  const post = blogPosts[parseInt(id) as keyof typeof blogPosts];
   
   if (!post) {
     return {
@@ -101,8 +102,9 @@ export async function generateMetadata({ params }: { params: { id: string } }): 
   };
 }
 
-export default function BlogPostPage({ params }: { params: { id: string } }) {
-  const post = blogPosts[parseInt(params.id) as keyof typeof blogPosts];
+export default async function BlogPostPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const post = blogPosts[parseInt(id) as keyof typeof blogPosts];
 
   if (!post) {
     return (

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { caseStudies } from "@/data/case-studies";
 
 interface CaseStudyPageProps {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
 
 export async function generateStaticParams() {
@@ -14,7 +14,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: CaseStudyPageProps): Promise<Metadata> {
-  const caseStudy = caseStudies.find(study => study.id === params.id);
+  const { id } = await params;
+  const caseStudy = caseStudies.find(study => study.id === id);
   
   if (!caseStudy) {
     return {
@@ -61,8 +62,9 @@ export async function generateMetadata({ params }: CaseStudyPageProps): Promise<
   };
 }
 
-export default function CaseStudyPage({ params }: CaseStudyPageProps) {
-  const caseStudy = caseStudies.find(study => study.id === params.id);
+export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
+  const { id } = await params;
+  const caseStudy = caseStudies.find(study => study.id === id);
 
   if (!caseStudy) {
     notFound();
