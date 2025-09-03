@@ -8,11 +8,9 @@ export default function WhyMe() {
         {/* Section Heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-            Why Me?
+            Why URL IRL?
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            I bring a unique combination of library expertise and technical skills that no other developer can offer.
-          </p>
+
         </div>
 
         {/* Three Column Grid */}
@@ -28,7 +26,7 @@ export default function WhyMe() {
               Insider Knowledge
             </h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              Skip the learning curve. I speak your language, from MARC records to ICIP protocols.
+              Skip the learning curve. We understand your world, from cataloging standards to library workflows.
             </p>
           </div>
 
@@ -66,7 +64,7 @@ export default function WhyMe() {
         {/* Call to Action */}
         <div className="text-center mt-16">
           <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-            Ready to see how this combination can transform your library?
+            Ready to transform your library's digital experience and give your community the library experience they deserve?
           </p>
           <a
             href="/contact"

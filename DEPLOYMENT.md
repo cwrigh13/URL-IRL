@@ -68,3 +68,4 @@ The issue was that GitHub Pages was serving the default `README.md` content inst
 - **If build fails**: Ensure all dynamic routes have `generateStaticParams()` functions
 
 Your site should now display your beautiful "Bespoke Technology for Australian Libraries" content instead of the default Next.js starter page!
+

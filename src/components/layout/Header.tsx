@@ -25,7 +25,7 @@ export default function Header() {
                 <span className="text-white font-heading font-bold text-sm">LC</span>
               </div>
               <span className="ml-2 text-xl font-heading font-semibold text-neutral-900 hidden sm:block">
-                Librarian Coder
+                URL IRL
               </span>
             </Link>
           </div>

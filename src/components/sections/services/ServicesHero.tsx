@@ -6,8 +6,8 @@ export default function ServicesHero() {
     <section className="bg-gradient-to-br from-blue-50 to-indigo-100 py-20 px-4">
       <div className="max-w-6xl mx-auto text-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-          My Philosophy: A Different Approach to{' '}
-          <span className="text-blue-600">Library Tech</span>
+          A Different Approach to{' '}
+          <span className="text-blue-600">Library Technology</span>
         </h1>
         <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-4xl mx-auto leading-relaxed">
           My work is guided by the same core values that guided me as a librarian. 

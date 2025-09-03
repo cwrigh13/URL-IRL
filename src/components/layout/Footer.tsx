@@ -119,7 +119,7 @@ export default function Footer() {
         <div className="border-t border-neutral-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-neutral-400 text-sm">
-              © {new Date().getFullYear()} Librarian Coder. All rights reserved.
+              © {new Date().getFullYear()} URL IRL. All rights reserved.
             </p>
             <div className="flex items-center space-x-6 text-sm text-neutral-400">
               <Link
