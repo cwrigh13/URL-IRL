@@ -1,4 +1,4 @@
-import { BookOpen, TrendingUp, Lightbulb } from 'lucide-react';
+
 
 export default function InsightsHero() {
   return (
@@ -13,24 +13,7 @@ export default function InsightsHero() {
           digital transformation, and software solutions. Written by someone who 
           understands both libraries and technology.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-          <div className="flex items-center gap-2 text-purple-600 font-semibold">
-            <BookOpen className="w-5 h-5" />
-            <span>Expert Knowledge</span>
-          </div>
-          <div className="flex items-center gap-2 text-indigo-600 font-semibold">
-            <TrendingUp className="w-5 h-5" />
-            <span>Latest Trends</span>
-          </div>
-          <div className="flex items-center gap-2 text-blue-600 font-semibold">
-            <Lightbulb className="w-5 h-5" />
-            <span>Practical Insights</span>
-          </div>
-        </div>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          From accessibility best practices to emerging technologies, discover insights 
-          that can help transform your library's digital services.
-        </p>
+
       </div>
     </section>
   );

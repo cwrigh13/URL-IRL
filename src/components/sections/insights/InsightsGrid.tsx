@@ -167,15 +167,7 @@ export default function InsightsGrid() {
           ))}
         </div>
 
-        <div className="text-center mt-16">
-          <Link
-            href="/insights/archive"
-            className="inline-flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200"
-          >
-            View All Articles
-            <ArrowRight className="w-5 h-5" />
-          </Link>
-        </div>
+
       </div>
     </section>
   );

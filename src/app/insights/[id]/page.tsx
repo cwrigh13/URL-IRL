@@ -219,12 +219,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
           <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
             Discover more articles about library technology, digital transformation, and software solutions.
           </p>
-          <Link
-            href="/insights"
-            className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200"
-          >
-            View All Articles
-          </Link>
+
         </div>
       </section>
     </main>

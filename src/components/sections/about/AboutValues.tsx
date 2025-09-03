@@ -43,12 +43,9 @@ export default function AboutValues() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            My Core Values
+            Our Core Values
           </h2>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            These principles guide everything I do, from the first consultation 
-            to the final delivery of your project.
-          </p>
+
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">

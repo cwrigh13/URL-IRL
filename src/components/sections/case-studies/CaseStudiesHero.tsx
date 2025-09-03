@@ -15,7 +15,7 @@ export default function CaseStudiesHero() {
           
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-10 leading-relaxed max-w-3xl mx-auto">
-            Explore the custom software solutions I've built for Australian libraries. Each case study demonstrates how understanding both library operations and modern technology creates powerful, user-friendly tools that transform how libraries serve their communities.
+            Explore the custom software solutions that URL IRL have built for Australian public libraries. Each case study demonstrates how understanding both library operations and modern technology creates powerful, user-friendly tools that transform how public libraries serve their communities.
           </p>
           
           {/* Call-to-Action */}
@@ -35,33 +35,7 @@ export default function CaseStudiesHero() {
             </Link>
           </div>
           
-          {/* Stats Section */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8 border-t border-gray-200 dark:border-gray-700">
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                15+
-              </div>
-              <div className="text-gray-600 dark:text-gray-400">
-                Libraries Served
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                25+
-              </div>
-              <div className="text-gray-600 dark:text-gray-400">
-                Projects Completed
-              </div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-                98%
-              </div>
-              <div className="text-gray-600 dark:text-gray-400">
-                Client Satisfaction
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
       

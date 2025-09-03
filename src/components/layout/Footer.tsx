@@ -57,12 +57,12 @@ export default function Footer() {
           {/* Column 2: Mission Statement */}
           <div className="space-y-4">
             <h3 className="text-lg font-heading font-semibold text-white mb-4">
-              My Mission
+              Our Mission
             </h3>
             <p className="text-neutral-300 leading-relaxed">
-              Empowering libraries with innovative technology solutions that enhance 
-              user experiences and streamline operations. I bridge the gap between 
-              traditional library services and modern digital capabilities.
+              Empowering Australian public libraries with innovative technology solutions that enhance 
+              user experiences and streamline operations. URL IRL bridges the gap between 
+              traditional public library services and modern digital capabilities.
             </p>
           </div>
 

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Code, Database, Smartphone, Users, Shield, Zap } from 'lucide-react';
+import { Code, Smartphone, Users } from 'lucide-react';
 
 export default function ServicesOverview() {
   const services = [
@@ -9,12 +9,7 @@ export default function ServicesOverview() {
       description: 'Bespoke applications tailored to your library\'s specific needs and workflows.',
       color: 'blue'
     },
-    {
-      icon: Database,
-      title: 'Library Management Systems',
-      description: 'Modern, user-friendly systems that streamline your operations and improve patron experience.',
-      color: 'green'
-    },
+
     {
       icon: Smartphone,
       title: 'Mobile Applications',
@@ -27,28 +22,15 @@ export default function ServicesOverview() {
       description: 'Seamlessly connect your existing systems and create new digital experiences.',
       color: 'orange'
     },
-    {
-      icon: Shield,
-      title: 'Security & Compliance',
-      description: 'Ensure your systems meet Australian privacy standards and protect patron data.',
-      color: 'red'
-    },
-    {
-      icon: Zap,
-      title: 'Performance Optimization',
-      description: 'Speed up existing systems and improve user experience across all devices.',
-      color: 'yellow'
-    }
+
+
   ];
 
   const getColorClasses = (color: string) => {
     const colorMap: Record<string, { bg: string; icon: string }> = {
       blue: { bg: 'bg-blue-100', icon: 'text-blue-600' },
-      green: { bg: 'bg-green-100', icon: 'text-green-600' },
       purple: { bg: 'bg-purple-100', icon: 'text-purple-600' },
-      orange: { bg: 'bg-orange-100', icon: 'text-orange-600' },
-      red: { bg: 'bg-red-100', icon: 'text-red-600' },
-      yellow: { bg: 'bg-yellow-100', icon: 'text-yellow-600' }
+      orange: { bg: 'bg-orange-100', icon: 'text-orange-600' }
     };
     return colorMap[color] || colorMap.blue;
   };
@@ -102,7 +84,6 @@ export default function ServicesOverview() {
               className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
             >
               Book Your Free Consultation
-              <Zap className="w-5 h-5" />
             </Link>
           </div>
         </div>
