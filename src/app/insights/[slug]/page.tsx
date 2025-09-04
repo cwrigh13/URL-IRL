@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock, Share2, BookOpen } from "lucide-react";
+import { generateBlogSlug } from "@/utils/slug";
 
 // This would typically come from a CMS or database
 const blogPosts = {
-  1: {
+  'future-library-technology-australian-libraries': {
     id: 1,
+    slug: 'future-library-technology-australian-libraries',
     title: 'The Future of Library Technology: What Australian Libraries Need to Know',
     excerpt: 'Explore emerging trends in library technology and how they can benefit Australian public libraries. From AI-powered search to enhanced accessibility features.',
     content: `
@@ -52,15 +54,20 @@ const blogPosts = {
   }
 };
 
+// Create a reverse lookup for old numeric IDs to new slugs
+const idToSlugMap: Record<number, string> = {
+  1: 'future-library-technology-australian-libraries'
+};
+
 export async function generateStaticParams() {
-  return Object.keys(blogPosts).map((id) => ({
-    id: id,
+  return Object.keys(blogPosts).map((slug) => ({
+    slug: slug,
   }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
-  const { id } = await params;
-  const post = blogPosts[parseInt(id) as keyof typeof blogPosts];
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const post = blogPosts[slug as keyof typeof blogPosts];
   
   if (!post) {
     return {
@@ -83,7 +90,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `https://librarianwhocodes.com.au/insights/${post.id}`,
+      url: `https://librarianwhocodes.com.au/insights/${post.slug}`,
       siteName: 'The Librarian Who Codes',
       locale: 'en_AU',
       type: 'article',
@@ -97,14 +104,14 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
       description: post.excerpt,
     },
     alternates: {
-      canonical: `/insights/${post.id}`,
+      canonical: `/insights/${post.slug}`,
     },
   };
 }
 
-export default async function BlogPostPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
-  const post = blogPosts[parseInt(id) as keyof typeof blogPosts];
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = blogPosts[slug as keyof typeof blogPosts];
 
   if (!post) {
     return (

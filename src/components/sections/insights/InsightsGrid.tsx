@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
+import { generateBlogSlug } from '@/utils/slug';
 
 export default function InsightsGrid() {
   const insights = [
@@ -10,7 +11,8 @@ export default function InsightsGrid() {
       category: 'Technology Trends',
       readTime: '8 min read',
       date: '2024-01-15',
-      featured: true
+      featured: true,
+      slug: 'future-library-technology-australian-libraries'
     },
     {
       id: 2,
@@ -18,7 +20,8 @@ export default function InsightsGrid() {
       excerpt: 'A practical guide to creating library software that serves all members of your community, including those with disabilities.',
       category: 'Accessibility',
       readTime: '6 min read',
-      date: '2024-01-10'
+      date: '2024-01-10',
+      slug: 'building-accessible-library-software-wcag-compliance'
     },
     {
       id: 3,
@@ -26,7 +29,8 @@ export default function InsightsGrid() {
       excerpt: 'Discover how small and regional libraries can leverage technology to provide big-city services on a local government budget.',
       category: 'Budget & Planning',
       readTime: '7 min read',
-      date: '2024-01-05'
+      date: '2024-01-05',
+      slug: 'cost-effective-technology-solutions-small-libraries'
     },
     {
       id: 4,
@@ -34,7 +38,8 @@ export default function InsightsGrid() {
       excerpt: 'Learn how to modernize your existing library systems without disrupting services or breaking the budget.',
       category: 'System Integration',
       readTime: '10 min read',
-      date: '2023-12-28'
+      date: '2023-12-28',
+      slug: 'integrating-legacy-systems-step-by-step-approach'
     },
     {
       id: 5,
@@ -42,7 +47,8 @@ export default function InsightsGrid() {
       excerpt: 'Why mobile-first design is crucial for library software and how to implement it effectively for your community.',
       category: 'User Experience',
       readTime: '5 min read',
-      date: '2023-12-20'
+      date: '2023-12-20',
+      slug: 'mobile-first-design-library-applications'
     },
     {
       id: 6,
@@ -50,7 +56,8 @@ export default function InsightsGrid() {
       excerpt: 'Essential security practices for library software, ensuring your patrons\' data remains safe and compliant with Australian privacy laws.',
       category: 'Security & Privacy',
       readTime: '9 min read',
-      date: '2023-12-15'
+      date: '2023-12-15',
+      slug: 'data-security-library-software-protecting-patron-privacy'
     }
   ];
 
@@ -116,7 +123,7 @@ export default function InsightsGrid() {
                   </div>
                 </div>
                 <Link
-                  href={`/insights/${insight.id}`}
+                  href={`/insights/${insight.slug}`}
                   className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
                 >
                   Read Full Article
@@ -155,7 +162,7 @@ export default function InsightsGrid() {
                     </div>
                   </div>
                   <Link
-                    href={`/insights/${insight.id}`}
+                    href={`/insights/${insight.slug}`}
                     className="text-purple-600 hover:text-purple-700 font-medium text-sm flex items-center gap-1 transition-colors duration-200"
                   >
                     Read More

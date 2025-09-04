@@ -1,5 +1,5 @@
 import React from 'react';
-import { Brain, Settings, Handshake } from 'lucide-react';
+import { Brain, Settings, Handshake, FileCheck } from 'lucide-react';
 
 export default function WhyMe() {
   return (
@@ -13,8 +13,8 @@ export default function WhyMe() {
 
         </div>
 
-        {/* Three Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+        {/* Four Column Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Column 1: Insider Knowledge */}
           <div className="text-center group">
             <div className="mb-6 flex justify-center">
@@ -57,6 +57,21 @@ export default function WhyMe() {
             </h3>
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
               Get a high-impact, custom solution without the enterprise price tag.
+            </p>
+          </div>
+
+          {/* Column 4: Streamlined Procurement */}
+          <div className="text-center group">
+            <div className="mb-6 flex justify-center">
+              <div className="w-20 h-20 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center group-hover:bg-orange-200 dark:group-hover:bg-orange-800 transition-colors duration-300">
+                <FileCheck className="w-10 h-10 text-orange-600 dark:text-orange-400" />
+              </div>
+            </div>
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+              Streamlined Procurement
+            </h3>
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+              We can help ensure that projects are scoped to align with local council tender thresholds, simplifying your path to approval.
             </p>
           </div>
         </div>
