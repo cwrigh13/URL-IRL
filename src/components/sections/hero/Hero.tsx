@@ -7,12 +7,12 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Headline */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-            Bespoke Technology for Australian Libraries
+            Bespoke Technology for <span className="text-blue-600 dark:text-blue-400">Australian Libraries</span>
           </h1>
           
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-10 leading-relaxed max-w-3xl mx-auto">
-            Transform your library&apos;s digital experience with custom software solutions that understand both the technical challenges and the unique needs of library professionals.
+            As independent software developers, we offer a different approach to your library&apos;s digital experience. We partner with you to build custom solutions that engage multicultural communities, solving the technical challenges you face while respecting the unique needs of library professionals.
           </p>
           
           {/* Call-to-Action Buttons */}

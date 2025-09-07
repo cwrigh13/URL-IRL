@@ -1,87 +1,96 @@
-import { Heart, Shield, Zap, Users } from 'lucide-react';
+import { BookOpen, Code, Users } from 'lucide-react';
 
 export default function AboutValues() {
   const values = [
     {
-      icon: Heart,
-      title: 'Passion for Libraries',
-      description: 'I genuinely care about libraries and their mission to serve communities. This isn\'t just a job—it\'s a calling.',
-      color: 'red'
-    },
-    {
-      icon: Shield,
-      title: 'Trust & Reliability',
-      description: 'I build long-term partnerships based on trust, transparency, and delivering on my promises.',
+      icon: BookOpen,
+      title: 'Library Experience',
+      description: 'Years of hands-on experience in public libraries, understanding workflows, challenges, and community needs.',
       color: 'blue'
     },
     {
-      icon: Zap,
-      title: 'Innovation & Efficiency',
-      description: 'I stay current with technology trends to bring you the best, most efficient solutions available.',
-      color: 'yellow'
+      icon: Code,
+      title: 'Technical Expertise',
+      description: 'Modern software development skills with a focus on accessibility, performance, and user experience.',
+      color: 'green'
     },
     {
       icon: Users,
-      title: 'Community First',
-      description: 'Every solution I build prioritizes the needs of your community and the people who use your library.',
-      color: 'green'
+      title: 'Community Focus',
+      description: 'Deep understanding of how libraries serve diverse communities and the technology needed to support them.',
+      color: 'purple'
     }
   ];
 
   const getColorClasses = (color: string) => {
-    const colorMap: Record<string, { bg: string; icon: string }> = {
-      red: { bg: 'bg-red-100', icon: 'text-red-600' },
-      blue: { bg: 'bg-blue-100', icon: 'text-blue-600' },
-      yellow: { bg: 'bg-yellow-100', icon: 'text-yellow-600' },
-      green: { bg: 'bg-green-100', icon: 'text-green-600' }
+    const colorMap: Record<string, { bg: string; icon: string; text: string }> = {
+      blue: { 
+        bg: 'bg-gradient-to-br from-blue-50 to-blue-100', 
+        icon: 'text-blue-600',
+        text: 'text-blue-900'
+      },
+      green: { 
+        bg: 'bg-gradient-to-br from-green-50 to-green-100', 
+        icon: 'text-green-600',
+        text: 'text-green-900'
+      },
+      purple: { 
+        bg: 'bg-gradient-to-br from-purple-50 to-purple-100', 
+        icon: 'text-purple-600',
+        text: 'text-purple-900'
+      }
     };
     return colorMap[color] || colorMap.blue;
   };
 
   return (
-    <section className="py-20 px-4 bg-gray-50">
+    <section className="py-20 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Our Core Values
+            Why Choose URL IRL?
           </h2>
-
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            A unique combination of library experience and technical expertise that delivers real results
+          </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {values.map((value, index) => {
-            const colors = getColorClasses(value.color);
-            const IconComponent = value.icon;
-            
-            return (
-              <div key={index} className="bg-white rounded-xl p-8 shadow-sm hover:shadow-md transition-shadow duration-200">
-                <div className={`${colors.bg} w-16 h-16 rounded-xl flex items-center justify-center mb-6`}>
-                  <IconComponent className={`w-8 h-8 ${colors.icon}`} />
+        <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-xl border border-white/20 mb-16">
+          <div className="grid md:grid-cols-3 gap-8">
+            {values.map((value, index) => {
+              const colors = getColorClasses(value.color);
+              const IconComponent = value.icon;
+              
+              return (
+                <div key={index} className="text-center group">
+                  <div className={`${colors.bg} w-20 h-20 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:scale-105 transition-transform duration-300 shadow-lg`}>
+                    <IconComponent className={`w-10 h-10 ${colors.icon}`} />
+                  </div>
+                  <h3 className={`text-2xl font-bold ${colors.text} mb-4 group-hover:scale-105 transition-transform duration-300`}>
+                    {value.title}
+                  </h3>
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    {value.description}
+                  </p>
                 </div>
-                <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                  {value.title}
-                </h3>
-                <p className="text-gray-700 leading-relaxed text-lg">
-                  {value.description}
-                </p>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
 
         <div className="text-center">
-          <div className="bg-white rounded-2xl p-8 md:p-12 shadow-sm max-w-4xl mx-auto">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 md:p-12 shadow-2xl max-w-4xl mx-auto text-white">
+            <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Ready to Work With Someone Who Gets It?
             </h3>
-            <p className="text-lg text-gray-700 mb-6">
+            <p className="text-lg text-blue-100 mb-8">
               Let's have a conversation about your library's technology needs. 
               I promise you'll be talking to someone who understands your world.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="mailto:hello@librarianwhocodes.com.au"
-                className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 Send Me an Email
               </a>
@@ -89,7 +98,7 @@ export default function AboutValues() {
                 href="https://linkedin.com/in/librarianwhocodes"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-gray-700 px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 border-2 border-gray-200 hover:border-gray-300"
+                className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 border-2 border-white/30 hover:border-white/50 hover:scale-105"
               >
                 Connect on LinkedIn
               </a>
