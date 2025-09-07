@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, Globe, Users, BookOpen, Shield, BarChart3 } from 'lucide-react';
+import { Globe, Users, Shield, BarChart3 } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Georges River Reads - Multicultural Reading App | Case Study',
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Georges River Reads - Multicultural Reading App - Georges River Libraries',
     description: 'A bespoke, gamified reading platform that increases literacy engagement and strengthens community bonds across the diverse Georges River area.',
-    url: 'https://librarianwhocodes.com.au/case-studies/georges-river-reads',
-    siteName: 'The Librarian Who Codes',
+    url: 'https://urlirl.com.au/case-studies/georges-river-reads',
+    siteName: 'URL IRL',
     images: [
       {
         url: '/case-studies/georges-river-reads.svg',

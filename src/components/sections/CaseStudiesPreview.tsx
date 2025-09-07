@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Clock, MapPin, Users } from "lucide-react";
+import { ArrowRight, Clock } from "lucide-react";
 import { getFeaturedCaseStudies } from "@/data/case-studies";
 
 export default function CaseStudiesPreview() {

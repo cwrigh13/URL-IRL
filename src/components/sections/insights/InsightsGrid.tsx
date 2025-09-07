@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
-import { generateBlogSlug } from '@/utils/slug';
 
 export default function InsightsGrid() {
   const insights = [

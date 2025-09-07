@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { AboutHero, AboutValues } from "@/components/sections/about";
 
 export const metadata: Metadata = {
-  title: "My Story | The Librarian Who Codes | Custom Software for Australian Libraries",
+  title: "My Story | URL IRL | Custom Software for Australian Libraries",
   description: "Discover my journey from librarian to developer, and how my unique background helps me create technology solutions that truly understand library needs.",
   keywords: [
     "librarian developer",
@@ -17,16 +17,16 @@ export const metadata: Metadata = {
     "library software consultant story"
   ],
   openGraph: {
-    title: "My Story | The Librarian Who Codes | Custom Software for Australian Libraries",
+    title: "My Story | URL IRL | Custom Software for Australian Libraries",
     description: "Discover my journey from librarian to developer, and how my unique background helps me create technology solutions that truly understand library needs.",
-    url: 'https://librarianwhocodes.com.au/about',
-    siteName: 'The Librarian Who Codes',
+    url: 'https://urlirl.com.au/about',
+    siteName: 'URL IRL',
     images: [
       {
         url: '/about-hero.jpg',
         width: 1200,
         height: 630,
-        alt: 'My Story - The Librarian Who Codes',
+        alt: 'My Story - URL IRL',
       },
     ],
     locale: 'en_AU',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "My Story | The Librarian Who Codes | Custom Software for Australian Libraries",
+    title: "My Story | URL IRL | Custom Software for Australian Libraries",
     description: "Discover my journey from librarian to developer, and how my unique background helps me create technology solutions.",
     images: ['/about-hero.jpg'],
   },

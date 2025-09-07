@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: 'Closing the Loop: A Multilingual Feedback Platform for the Digital Tool Library - Georges River Libraries | The Librarian Who Codes',
+  title: 'Closing the Loop: A Multilingual Feedback Platform for the Digital Tool Library - Georges River Libraries | URL IRL',
   description: 'A lightweight, multilingual web application that creates a direct channel for community feedback, enabling data-driven collection management and faster maintenance for a high-value library collection.',
   keywords: [
     'library software case study',
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Closing the Loop: A Multilingual Feedback Platform for the Digital Tool Library - Georges River Libraries',
     description: 'A lightweight, multilingual web application that creates a direct channel for community feedback, enabling data-driven collection management and faster maintenance for a high-value library collection.',
-    url: 'https://librarianwhocodes.com.au/case-studies/digital-tool-library-feedback',
-    siteName: 'The Librarian Who Codes',
+    url: 'https://urlirl.com.au/case-studies/digital-tool-library-feedback',
+    siteName: 'URL IRL',
     images: [
       {
         url: '/case-studies/georges-river-reads.svg',

@@ -24,7 +24,7 @@ export default function CaseStudiesHero() {
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-semibold text-lg rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
-              Start Your Project
+              Start Your Custom Solution
             </Link>
             
             <Link

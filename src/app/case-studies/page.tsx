@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { CaseStudiesHero, CaseStudyGrid } from "@/components/sections/case-studies";
 
 export const metadata: Metadata = {
-  title: "Case Studies - Custom Library Software Solutions | The Librarian Who Codes",
+  title: "Case Studies - Custom Library Software Solutions | URL IRL",
   description: "Explore real-world examples of custom software solutions I've built for Australian libraries. See how bespoke technology transforms library operations and enhances patron experiences.",
   keywords: [
     "library software case studies",
@@ -17,16 +17,16 @@ export const metadata: Metadata = {
     "library software portfolio"
   ],
   openGraph: {
-    title: "Case Studies - Custom Library Software Solutions | The Librarian Who Codes",
+    title: "Case Studies - Custom Library Software Solutions | URL IRL",
     description: "Explore real-world examples of custom software solutions I've built for Australian libraries. See how bespoke technology transforms library operations and enhances patron experiences.",
-    url: 'https://librarianwhocodes.com.au/case-studies',
-    siteName: 'The Librarian Who Codes',
+    url: 'https://urlirl.com.au/case-studies',
+    siteName: 'URL IRL',
     images: [
       {
         url: '/case-studies-hero.jpg',
         width: 1200,
         height: 630,
-        alt: 'Library Software Case Studies - The Librarian Who Codes',
+        alt: 'Library Software Case Studies - URL IRL',
       },
     ],
     locale: 'en_AU',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Case Studies - Custom Library Software Solutions | The Librarian Who Codes",
+    title: "Case Studies - Custom Library Software Solutions | URL IRL",
     description: "Explore real-world examples of custom software solutions I've built for Australian libraries.",
     images: ['/case-studies-hero.jpg'],
   },

@@ -3,6 +3,7 @@ import { Inter, Source_Sans_3 } from "next/font/google";
 import { Header, Footer } from "@/components/layout";
 import { GoogleAnalytics } from "@/components/analytics";
 import { StructuredData } from "@/components/ui";
+import ErrorBoundary from "@/components/ErrorBoundary";
 import "./globals.css";
 
 const inter = Inter({
@@ -32,31 +33,31 @@ export const metadata: Metadata = {
     "library software Australia",
     "library technology partner"
   ],
-  authors: [{ name: "The Librarian Who Codes" }],
-  creator: "The Librarian Who Codes",
-  publisher: "The Librarian Who Codes",
+  authors: [{ name: "URL IRL" }],
+  creator: "URL IRL",
+  publisher: "URL IRL",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://librarianwhocodes.com.au'),
+  metadataBase: new URL('https://urlirl.com.au'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_AU',
-    url: 'https://librarianwhocodes.com.au',
+    url: 'https://urlirl.com.au',
     title: 'Custom Software for Australian Libraries',
     description: 'Expert custom software solutions for Australian public libraries. Built by a librarian who codes, delivering bespoke technology that understands your unique challenges, values, and community needs.',
-    siteName: 'The Librarian Who Codes',
+    siteName: 'URL IRL',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Custom Software for Australian Libraries - The Librarian Who Codes',
+        alt: 'Custom Software for Australian Libraries - URL IRL',
       },
     ],
   },
@@ -95,10 +96,14 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${sourceSans.variable} font-sans antialiased`}
       >
-        <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ''} />
-        <Header />
-        {children}
-        <Footer />
+        <ErrorBoundary>
+          <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ''} />
+          <Header />
+          <main id="main-content" role="main">
+            {children}
+          </main>
+          <Footer />
+        </ErrorBoundary>
       </body>
     </html>
   );

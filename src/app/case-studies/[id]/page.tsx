@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: CaseStudyPageProps): Promise<
   }
 
   return {
-    title: `${caseStudy.title} - ${caseStudy.library} | The Librarian Who Codes`,
+    title: `${caseStudy.title} - ${caseStudy.library} | URL IRL`,
     description: caseStudy.description,
     keywords: [
       'library software case study',
@@ -37,8 +37,8 @@ export async function generateMetadata({ params }: CaseStudyPageProps): Promise<
     openGraph: {
       title: `${caseStudy.title} - ${caseStudy.library}`,
       description: caseStudy.description,
-      url: `https://librarianwhocodes.com.au/case-studies/${caseStudy.id}`,
-      siteName: 'The Librarian Who Codes',
+      url: `https://urlirl.com.au/case-studies/${caseStudy.id}`,
+      siteName: 'URL IRL',
       images: [
         {
           url: caseStudy.image,

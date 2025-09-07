@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, Clock, MapPin, Users, CheckCircle, Code, Lightbulb, TrendingUp, Globe, MessageSquare, Headphones, Smartphone } from "lucide-react";
+import { ArrowLeft, Clock, MapPin, Users, CheckCircle, Code, Lightbulb, TrendingUp, Globe } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Babel Fish Translation App - Breaking Down Language Barriers | Case Study",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Babel Fish Translation App - Breaking Down Language Barriers | Case Study",
     description: "How I built a full-stack translation app that empowers library staff to communicate effectively with patrons from diverse linguistic backgrounds, fostering inclusivity and better service.",
-    url: 'https://librarianwhocodes.com.au/case-studies/babel-fish-translation',
-    siteName: 'The Librarian Who Codes',
+    url: 'https://urlirl.com.au/case-studies/babel-fish-translation',
+    siteName: 'URL IRL',
     images: [
       {
         url: '/case-studies/babel-fish-translation.jpg',

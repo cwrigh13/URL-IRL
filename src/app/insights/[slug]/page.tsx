@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Clock, Share2, BookOpen } from "lucide-react";
-import { generateBlogSlug } from "@/utils/slug";
+import { sanitizeHtml } from "@/utils/sanitize";
 
 // This would typically come from a CMS or database
 const blogPosts = {
@@ -49,15 +49,11 @@ const blogPosts = {
     readTime: '8 min read',
     date: '2024-01-15',
     featured: true,
-    author: 'The Librarian Who Codes',
+    author: 'URL IRL',
     tags: ['AI', 'Cloud Computing', 'Accessibility', 'Mobile Design', 'Digital Transformation']
   }
 };
 
-// Create a reverse lookup for old numeric IDs to new slugs
-const idToSlugMap: Record<number, string> = {
-  1: 'future-library-technology-australian-libraries'
-};
 
 export async function generateStaticParams() {
   return Object.keys(blogPosts).map((slug) => ({
@@ -71,13 +67,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   
   if (!post) {
     return {
-      title: 'Blog Post Not Found | The Librarian Who Codes',
+      title: 'Blog Post Not Found | URL IRL',
       description: 'The requested blog post could not be found.'
     };
   }
 
   return {
-    title: `${post.title} | The Librarian Who Codes`,
+    title: `${post.title} | URL IRL`,
     description: post.excerpt,
     keywords: [
       'library technology',
@@ -90,8 +86,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `https://librarianwhocodes.com.au/insights/${post.slug}`,
-      siteName: 'The Librarian Who Codes',
+      url: `https://urlirl.com.au/insights/${post.slug}`,
+      siteName: 'URL IRL',
       locale: 'en_AU',
       type: 'article',
       publishedTime: post.date,
@@ -188,7 +184,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <article className="prose prose-lg prose-purple max-w-none">
-            <div dangerouslySetInnerHTML={{ __html: post.content }} />
+            <div dangerouslySetInnerHTML={{ __html: sanitizeHtml(post.content) }} />
           </article>
           
           {/* Tags */}

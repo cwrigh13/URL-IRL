@@ -2,22 +2,26 @@ export default function StructuredData() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "The Librarian Who Codes",
+    "name": "URL IRL",
     "description": "Custom software solutions for Australian public libraries, built by a librarian who understands your unique challenges and values.",
-    "url": "https://librarianwhocodes.com.au",
-    "logo": "https://librarianwhocodes.com.au/logo.png",
-    "image": "https://librarianwhocodes.com.au/og-image.jpg",
+    "url": "https://urlirl.com.au",
+    "logo": "https://urlirl.com.au/logo.png",
+    "image": "https://urlirl.com.au/og-image.jpg",
     "telephone": "+61-XXX-XXX-XXX",
-    "email": "hello@librarianwhocodes.com.au",
+    "email": "hello@urlirl.com.au",
+    "taxID": "XX XXX XXX XXX",
     "address": {
       "@type": "PostalAddress",
-      "addressCountry": "AU",
-      "addressRegion": "Australia"
+      "streetAddress": "YOUR STREET ADDRESS",
+      "addressLocality": "YOUR CITY",
+      "addressRegion": "YOUR STATE",
+      "postalCode": "XXXX",
+      "addressCountry": "AU"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "-25.2744",
-      "longitude": "133.7751"
+      "latitude": "YOUR_LATITUDE",
+      "longitude": "YOUR_LONGITUDE"
     },
     "areaServed": {
       "@type": "Country",
@@ -62,7 +66,7 @@ export default function StructuredData() {
     },
     "founder": {
       "@type": "Person",
-      "name": "The Librarian Who Codes",
+      "name": "URL IRL",
       "jobTitle": "Library Technology Consultant & Software Developer",
       "description": "Former librarian turned software developer, specializing in Australian public library technology solutions"
     },

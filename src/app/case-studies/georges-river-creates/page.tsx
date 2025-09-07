@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Georges River Libraries - AI-Powered Knowledge Hub | Case Study",
     description: "How I built an AI-powered knowledge hub that unified fragmented operational information and reduced staff search time from 3-5 minutes to under 10 seconds.",
-    url: 'https://librarianwhocodes.com.au/case-studies/georges-river-creates',
-    siteName: 'The Librarian Who Codes',
+    url: 'https://urlirl.com.au/case-studies/georges-river-creates',
+    siteName: 'URL IRL',
     images: [
       {
         url: '/case-studies/georges-river-creates.jpg',

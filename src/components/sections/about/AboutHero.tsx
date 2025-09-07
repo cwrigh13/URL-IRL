@@ -19,7 +19,7 @@ export default function AboutHero() {
             className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
           >
             <Calendar className="w-5 h-5" />
-            Book a Free Consultation
+            Book Your Free 30-Minute Consultation
             <ArrowRight className="w-5 h-5" />
           </Link>
           <Link

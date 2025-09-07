@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowLeft, Clock, MapPin, Users, CheckCircle, Code, Lightbulb, TrendingUp, Globe, Shield, Zap } from "lucide-react";
+import { ArrowLeft, MapPin, Users, CheckCircle, Code, TrendingUp, Globe, Shield, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Connecting Communities: A Multilingual, Accessible Resource Finder for Georges River | Case Study",
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Connecting Communities: A Multilingual, Accessible Resource Finder for Georges River | Case Study",
     description: "How I built a high-performance, WCAG-compliant Progressive Web App that makes vital community services accessible to all residents, regardless of language or internet connectivity.",
-    url: 'https://librarianwhocodes.com.au/case-studies/georges-river-resource-finder',
-    siteName: 'The Librarian Who Codes',
+    url: 'https://urlirl.com.au/case-studies/georges-river-resource-finder',
+    siteName: 'URL IRL',
     images: [
       {
         url: '/case-studies/georges-river-resource-finder.jpg',

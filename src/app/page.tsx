@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Hero, WhyMe, CaseStudiesPreview } from "@/components/sections";
+import RelatedContent from "@/components/sections/RelatedContent";
 
 export const metadata: Metadata = {
-  title: "Custom Software for Australian Libraries | The Librarian Who Codes",
+  title: "Custom Software for Australian Libraries | URL IRL",
   description: "Transform your library with custom software solutions built by a librarian who understands your challenges. Book a free consultation for bespoke technology that serves your community.",
   keywords: [
     "Australian library software",
@@ -17,10 +18,10 @@ export const metadata: Metadata = {
     "library technology partner"
   ],
   openGraph: {
-    title: "Custom Software for Australian Libraries | The Librarian Who Codes",
+    title: "Custom Software for Australian Libraries | URL IRL",
     description: "Transform your library with custom software solutions built by a librarian who understands your challenges. Book a free consultation for bespoke technology that serves your community.",
-    url: 'https://librarianwhocodes.com.au',
-    siteName: 'The Librarian Who Codes',
+    url: 'https://urlirl.com.au',
+    siteName: 'URL IRL',
     images: [
       {
         url: '/homepage-hero.jpg',
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Custom Software for Australian Libraries | The Librarian Who Codes",
+    title: "Custom Software for Australian Libraries | URL IRL",
     description: "Transform your library with custom software solutions built by a librarian who understands your challenges.",
     images: ['/homepage-hero.jpg'],
   },
@@ -49,6 +50,7 @@ export default function Home() {
       <Hero />
       <WhyMe />
       <CaseStudiesPreview />
+      <RelatedContent />
     </main>
   );
 }

@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
-import { ContactHero, ContactForm, ContactInfo } from "@/components/sections/contact";
+import dynamic from "next/dynamic";
+import { ContactHero, ContactInfo } from "@/components/sections/contact";
+import { ContactFormSkeleton } from "@/components/ui/LoadingSkeleton";
+
+// Dynamically import ContactForm to reduce initial bundle size
+const ContactForm = dynamic(() => import("@/components/sections/contact/ContactForm"), {
+  loading: () => <ContactFormSkeleton />
+});
 
 export const metadata: Metadata = {
-  title: "Contact | Book a Consultation | The Librarian Who Codes",
+  title: "Contact | Book a Consultation | URL IRL",
   description: "Ready to transform your library? Book a free consultation to discuss your technology needs. Let's build something great together.",
   keywords: [
     "library technology consultation",
@@ -17,16 +24,16 @@ export const metadata: Metadata = {
     "library software development Australia"
   ],
   openGraph: {
-    title: "Contact | Book a Consultation | The Librarian Who Codes",
+    title: "Contact | Book a Consultation | URL IRL",
     description: "Ready to transform your library? Book a free consultation to discuss your technology needs. Let's build something great together.",
-    url: 'https://librarianwhocodes.com.au/contact',
-    siteName: 'The Librarian Who Codes',
+    url: 'https://urlirl.com.au/contact',
+    siteName: 'URL IRL',
     images: [
       {
         url: '/contact-hero.jpg',
         width: 1200,
         height: 630,
-        alt: 'Contact - Book a Consultation - The Librarian Who Codes',
+        alt: 'Contact - Book a Consultation - URL IRL',
       },
     ],
     locale: 'en_AU',
@@ -34,7 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Contact | Book a Consultation | The Librarian Who Codes",
+    title: "Contact | Book a Consultation | URL IRL",
     description: "Ready to transform your library? Book a free consultation to discuss your technology needs.",
     images: ['/contact-hero.jpg'],
   },

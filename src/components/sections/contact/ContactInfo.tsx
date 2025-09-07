@@ -23,10 +23,10 @@ export default function ContactInfo() {
               The fastest way to get in touch. I typically respond within 24 hours.
             </p>
             <a
-              href="mailto:hello@librarianwhocodes.com.au"
+              href="mailto:hello@urlirl.com.au"
               className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold transition-colors duration-200"
             >
-              hello@librarianwhocodes.com.au
+              hello@urlirl.com.au
             </a>
           </div>
 
@@ -39,7 +39,7 @@ export default function ContactInfo() {
               Connect professionally and stay updated with library technology insights.
             </p>
             <a
-              href="https://linkedin.com/in/librarianwhocodes"
+              href="https://linkedin.com/in/urlirl"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-green-600 hover:text-green-700 font-semibold transition-colors duration-200"

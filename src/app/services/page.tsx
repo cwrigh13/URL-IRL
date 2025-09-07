@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ServicesHero, ServicesPhilosophy, ServicesOverview } from "@/components/sections/services";
 
 export const metadata: Metadata = {
-  title: "Services | Custom Software for Australian Libraries | The Librarian Who Codes",
+  title: "Services | Custom Software for Australian Libraries | URL IRL",
   description: "Discover my approach to library technology: accessible, community-focused, and cost-effective solutions built by a librarian who understands your challenges.",
   keywords: [
     "library software services",
@@ -17,16 +17,16 @@ export const metadata: Metadata = {
     "library community technology"
   ],
   openGraph: {
-    title: "Services | Custom Software for Australian Libraries | The Librarian Who Codes",
+    title: "Services | Custom Software for Australian Libraries | URL IRL",
     description: "Discover my approach to library technology: accessible, community-focused, and cost-effective solutions built by a librarian who understands your challenges.",
-    url: 'https://librarianwhocodes.com.au/services',
-    siteName: 'The Librarian Who Codes',
+    url: 'https://urlirl.com.au/services',
+    siteName: 'URL IRL',
     images: [
       {
         url: '/services-hero.jpg',
         width: 1200,
         height: 630,
-        alt: 'Library Technology Services - The Librarian Who Codes',
+        alt: 'Library Technology Services - URL IRL',
       },
     ],
     locale: 'en_AU',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Services | Custom Software for Australian Libraries | The Librarian Who Codes",
+    title: "Services | Custom Software for Australian Libraries | URL IRL",
     description: "Discover my approach to library technology: accessible, community-focused, and cost-effective solutions.",
     images: ['/services-hero.jpg'],
   },

@@ -99,13 +99,13 @@ export default function AboutValues() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:hello@librarianwhocodes.com.au"
+                href="mailto:hello@urlirl.com.au"
                 className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 Send Me an Email
               </a>
               <a
-                href="https://linkedin.com/in/librarianwhocodes"
+                href="https://linkedin.com/in/urlirl"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 border-2 border-white/30 hover:border-white/50 hover:scale-105"

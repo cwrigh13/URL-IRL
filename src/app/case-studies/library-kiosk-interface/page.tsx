@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getCaseStudyById } from "@/data/case-studies";
+import { sanitizeCaseStudyHtml } from "@/utils/sanitize";
 
 // Get the case study data for this specific page
 const caseStudy = getCaseStudyById('library-kiosk-interface');
@@ -13,7 +14,7 @@ if (!caseStudy) {
 const study = caseStudy;
 
 export const metadata: Metadata = {
-  title: `${study.title} - ${study.library} | The Librarian Who Codes`,
+  title: `${study.title} - ${study.library} | URL IRL`,
   description: study.description,
   keywords: [
     'library software case study',
@@ -28,8 +29,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${study.title} - ${study.library}`,
     description: study.description,
-    url: `https://librarianwhocodes.com.au/case-studies/${study.id}`,
-    siteName: 'The Librarian Who Codes',
+    url: `https://urlirl.com.au/case-studies/${study.id}`,
+    siteName: 'URL IRL',
     images: [
       {
         url: study.image,
@@ -181,7 +182,7 @@ export default function CaseStudyPage() {
                 <div className="prose prose-lg dark:prose-invert max-w-none">
                   <div 
                     className="text-gray-700 dark:text-gray-300 leading-relaxed"
-                    dangerouslySetInnerHTML={{ __html: study.fullDescription.replace(/'/g, '&apos;').replace(/"/g, '&quot;') }}
+                    dangerouslySetInnerHTML={{ __html: sanitizeCaseStudyHtml(study.fullDescription) }}
                   />
                 </div>
               </div>
@@ -196,7 +197,7 @@ export default function CaseStudyPage() {
                 <div className="prose prose-lg dark:prose-invert max-w-none">
                   <div 
                     className="text-gray-700 dark:text-gray-300 leading-relaxed"
-                    dangerouslySetInnerHTML={{ __html: study.technicalDetails.replace(/'/g, '&apos;').replace(/"/g, '&quot;') }}
+                    dangerouslySetInnerHTML={{ __html: sanitizeCaseStudyHtml(study.technicalDetails) }}
                   />
                 </div>
               </div>
@@ -211,7 +212,7 @@ export default function CaseStudyPage() {
                 <div className="prose prose-lg dark:prose-invert max-w-none">
                   <div 
                     className="text-gray-700 dark:text-gray-300 leading-relaxed"
-                    dangerouslySetInnerHTML={{ __html: study.implementation.replace(/'/g, '&quot;').replace(/"/g, '&quot;') }}
+                    dangerouslySetInnerHTML={{ __html: sanitizeCaseStudyHtml(study.implementation) }}
                   />
                 </div>
               </div>
@@ -226,7 +227,7 @@ export default function CaseStudyPage() {
                 <div className="prose prose-lg dark:prose-invert max-w-none">
                   <div 
                     className="text-gray-700 dark:text-gray-300 leading-relaxed"
-                    dangerouslySetInnerHTML={{ __html: study.outcomes.replace(/'/g, '&apos;').replace(/"/g, '&quot;') }}
+                    dangerouslySetInnerHTML={{ __html: sanitizeCaseStudyHtml(study.outcomes) }}
                   />
                 </div>
               </div>
@@ -241,7 +242,7 @@ export default function CaseStudyPage() {
                 <div className="prose prose-lg dark:prose-invert max-w-none">
                   <div 
                     className="text-gray-700 dark:text-gray-300 leading-relaxed"
-                    dangerouslySetInnerHTML={{ __html: study.lessonsLearned.replace(/'/g, '&apos;').replace(/"/g, '&quot;') }}
+                    dangerouslySetInnerHTML={{ __html: sanitizeCaseStudyHtml(study.lessonsLearned) }}
                   />
                 </div>
               </div>
@@ -256,7 +257,7 @@ export default function CaseStudyPage() {
                 <div className="prose prose-lg dark:prose-invert max-w-none">
                   <div 
                     className="text-gray-700 dark:text-gray-300 leading-relaxed"
-                    dangerouslySetInnerHTML={{ __html: study.nextSteps.replace(/'/g, '&apos;').replace(/"/g, '&quot;') }}
+                    dangerouslySetInnerHTML={{ __html: sanitizeCaseStudyHtml(study.nextSteps) }}
                   />
                 </div>
               </div>

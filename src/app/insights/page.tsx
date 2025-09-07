@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { InsightsHero, InsightsGrid, InsightsNewsletter } from "@/components/sections/insights";
 
 export const metadata: Metadata = {
-  title: "Insights | Library Technology Blog | The Librarian Who Codes",
+  title: "Insights | Library Technology Blog | URL IRL",
   description: "Stay updated with the latest insights on library technology, digital transformation, and software solutions. Expert perspectives from a librarian who codes.",
   keywords: [
     "library technology insights",
@@ -17,16 +17,16 @@ export const metadata: Metadata = {
     "library technology Australia"
   ],
   openGraph: {
-    title: "Insights | Library Technology Blog | The Librarian Who Codes",
+    title: "Insights | Library Technology Blog | URL IRL",
     description: "Stay updated with the latest insights on library technology, digital transformation, and software solutions. Expert perspectives from a librarian who codes.",
-    url: 'https://librarianwhocodes.com.au/insights',
-    siteName: 'The Librarian Who Codes',
+    url: 'https://urlirl.com.au/insights',
+    siteName: 'URL IRL',
     images: [
       {
         url: '/insights-hero.jpg',
         width: 1200,
         height: 630,
-        alt: 'Library Technology Insights - The Librarian Who Codes',
+        alt: 'Library Technology Insights - URL IRL',
       },
     ],
     locale: 'en_AU',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Insights | Library Technology Blog | The Librarian Who Codes",
+    title: "Insights | Library Technology Blog | URL IRL",
     description: "Stay updated with the latest insights on library technology, digital transformation, and software solutions.",
     images: ['/insights-hero.jpg'],
   },
