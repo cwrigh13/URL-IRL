@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { AboutHero, AboutStory, AboutValues } from "@/components/sections/about";
+import { AboutHero, AboutValues } from "@/components/sections/about";
 
 export const metadata: Metadata = {
   title: "My Story | The Librarian Who Codes | Custom Software for Australian Libraries",
@@ -47,7 +47,6 @@ export default function AboutPage() {
   return (
     <main>
       <AboutHero />
-      <AboutStory />
       <AboutValues />
     </main>
   );

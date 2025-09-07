@@ -85,15 +85,6 @@ export default function InsightsGrid() {
   return (
     <section className="py-20 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Latest Insights & Articles
-          </h2>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Stay informed with practical insights, industry trends, and expert advice 
-            on library technology and digital transformation.
-          </p>
-        </div>
 
         {/* Featured Article */}
         {insights.filter(insight => insight.featured).map(insight => (

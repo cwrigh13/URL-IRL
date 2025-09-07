@@ -56,7 +56,7 @@ export default function ServicesOverview() {
             
             return (
               <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200">
-                <div className={`${colors.bg} w-12 h-12 rounded-lg flex items-center justify-center mb-4`}>
+                <div className={`${colors.bg} w-12 h-12 rounded-lg flex items-center justify-center mb-4 mx-auto`}>
                   <IconComponent className={`w-6 h-6 ${colors.icon}`} />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
