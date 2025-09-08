@@ -1,8 +1,10 @@
 import { MetadataRoute } from 'next';
 import { caseStudies } from '@/data/case-studies';
 
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://urlirl.com.au';
+  const baseUrl = 'https://cwrigh13.github.io/URL-IRL';
   const currentDate = new Date().toISOString();
 
   // Static pages

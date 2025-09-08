@@ -1,0 +1,5 @@
+[33m184a32b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m feat: Complete website implementation with all features and optimizations
+[33mf404ebb[m Update about page, services sections, and insights components with improved content and styling
+[33mfd3f01e[m Update case study and component content with latest changes
+[33mc567c33[m Update case studies and insights functionality - Add middleware and slug utilities - Update digital-tool-library-feedback and georges-river-reads pages - Rename insights [id] to [slug] for better URL structure - Update InsightsGrid and WhyMe components
+[33m3d88931[m Update footer mission statement and remove insights buttons

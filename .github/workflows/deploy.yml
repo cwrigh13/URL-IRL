@@ -24,7 +24,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
           cache: 'npm'
       
       - name: Install dependencies
@@ -34,6 +34,7 @@ jobs:
         run: npm run build
         env:
           NODE_ENV: production
+          NEXT_PUBLIC_BASE_PATH: /URL-IRL
       
       - name: List build output
         run: ls -la out/
@@ -42,6 +43,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+          name: github-pages
 
   deploy:
     environment:
