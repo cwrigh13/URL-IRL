@@ -85,7 +85,7 @@ export default function WhyMe() {
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-semibold text-lg rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
-              Book Your Free 30-Minute Consultation
+              Get in touch
             </a>
           </div>
         </div>

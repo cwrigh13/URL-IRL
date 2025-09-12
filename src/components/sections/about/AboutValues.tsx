@@ -5,7 +5,7 @@ export default function AboutValues() {
     {
       icon: BookOpen,
       title: 'Library Experience',
-      description: 'Years of hands-on experience in public libraries, understanding workflows, challenges, and community needs.',
+      description: 'At URL IRL we have years of hands-on experience in public libraries. We understand your workflows, challenges and community needs.',
       color: 'blue'
     },
     {
@@ -81,9 +81,9 @@ export default function AboutValues() {
             Why This Background Matters
           </h3>
           <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            When you work with me, you're not explaining library concepts to a developer. 
-            You're collaborating with someone who already understands your world. 
-            I speak your language, I know your challenges, and I can translate your needs 
+            When you work with URL IRL, you're not explaining library concepts to a developer. 
+            You're collaborating with a team that already understands your world. 
+            We speak your language, we know your challenges, and URL IRL can translate your needs 
             into technology solutions that actually work for your library and your community.
           </p>
         </div>
@@ -91,18 +91,14 @@ export default function AboutValues() {
         <div className="text-center">
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 md:p-12 shadow-2xl max-w-4xl mx-auto text-white">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Ready to Work With Someone Who Gets It?
+              Ready to Work With a Team Who Gets It?
             </h3>
-            <p className="text-lg text-blue-100 mb-8">
-              Let's have a conversation about your library's technology needs. 
-              I promise you'll be talking to someone who understands your world.
-            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="mailto:hello@urlirl.com.au"
                 className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
               >
-                Send Me an Email
+                Get in touch
               </a>
               <a
                 href="https://linkedin.com/in/urlirl"

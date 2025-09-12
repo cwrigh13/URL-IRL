@@ -94,7 +94,7 @@ export default function RelatedContent() {
                 href="/contact"
                 className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 hover:-translate-y-0.5 shadow-md hover:shadow-lg"
               >
-                Book Free Consultation
+                Get in touch
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
               <Link

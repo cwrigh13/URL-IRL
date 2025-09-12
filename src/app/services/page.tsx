@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ServicesHero, ServicesPhilosophy, ServicesOverview } from "@/components/sections/services";
+import { ServicesHero, ServicesPhilosophy, ServicesOverview, ProcurementFunding } from "@/components/sections/services";
 
 export const metadata: Metadata = {
   title: "Services | Custom Software for Australian Libraries | URL IRL",
@@ -49,6 +49,7 @@ export default function ServicesPage() {
       <ServicesHero />
       <ServicesPhilosophy />
       <ServicesOverview />
+      <ProcurementFunding />
     </main>
   );
 }

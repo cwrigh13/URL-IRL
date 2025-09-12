@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 py-20 lg:py-32">
+    <section className="relative bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 pt-10 pb-20 lg:pt-16 lg:pb-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Headline */}
@@ -22,7 +22,7 @@ export default function Hero() {
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-semibold text-lg rounded-lg transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 shadow-lg hover:shadow-2xl hover:shadow-blue-500/25"
             >
-              Book Your Free 30-Minute Consultation
+              Get in touch
             </Link>
             
             {/* Secondary Button */}
@@ -34,10 +34,6 @@ export default function Hero() {
             </Link>
           </div>
           
-          {/* Value Proposition */}
-          <p className="mt-6 text-sm text-gray-600 dark:text-gray-400">
-            No obligation, just expert advice from a librarian who understands your challenges
-          </p>
 
         </div>
       </div>

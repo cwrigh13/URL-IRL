@@ -20,7 +20,7 @@ export default function ServicesHero() {
             className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
           >
             <Calendar className="w-5 h-5" />
-            Book Your Free 30-Minute Consultation
+            Get in touch
             <ArrowRight className="w-5 h-5" />
           </Link>
           <Link
@@ -42,7 +42,7 @@ export default function ServicesHero() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Access & Equity</h3>
               <p className="text-gray-700 leading-relaxed">
-                I believe technology should break down barriers, not create new ones. That's why I build multilingual, accessible (WCAG compliant), and intuitive applications that everyone in your community can use.
+                We believe that technology should break down barriers, not create new ones. That's why URL IRL build multilingual, accessible (WCAG compliant), and intuitive applications that everyone in your community can use.
               </p>
             </div>
           </div>
