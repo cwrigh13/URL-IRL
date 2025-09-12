@@ -8,11 +8,9 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const nextConfig: NextConfig = {
   output: 'export',
   trailingSlash: true,
-  basePath: '/URL-IRL',
   images: {
     unoptimized: true,
   },
-  assetPrefix: '/URL-IRL',
   experimental: {
     optimizePackageImports: ['lucide-react'],
   },
