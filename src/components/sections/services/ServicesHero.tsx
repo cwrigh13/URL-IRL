@@ -24,10 +24,10 @@ export default function ServicesHero() {
             <ArrowRight className="w-5 h-5" />
           </Link>
           <Link
-            href="/case-studies"
+            href="/contact"
             className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-gray-700 px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 border-2 border-gray-200 hover:border-gray-300"
           >
-            View Our Work
+            Get in touch
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>

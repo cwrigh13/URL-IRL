@@ -27,10 +27,10 @@ export default function Hero() {
             
             {/* Secondary Button */}
             <Link
-              href="/case-studies"
+              href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 font-medium text-lg rounded-lg transition-all duration-300 hover:border-gray-400 dark:hover:border-gray-500 hover:scale-105 hover:-translate-y-1 shadow-md hover:shadow-lg"
             >
-              View Our Work
+              Get in touch
             </Link>
           </div>
           
