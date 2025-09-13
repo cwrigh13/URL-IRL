@@ -1,5 +1,0 @@
-[33m9f9f60a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m Update website components and add new services section
-[33m7fe2839[m Add GitHub Actions workflow for automatic deployment
-[33m9a149d0[m Fix GitHub Pages deployment - update config and build static export
-[33meb4d81e[m Export static site for GitHub Pages
-[33m184a32b[m feat: Complete website implementation with all features and optimizations

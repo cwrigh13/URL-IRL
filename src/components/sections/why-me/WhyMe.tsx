@@ -1,5 +1,6 @@
 import React from 'react';
 import { BookOpen, Code, Users } from 'lucide-react';
+import Link from 'next/link';
 
 export default function WhyMe() {
   return (
@@ -30,7 +31,7 @@ export default function WhyMe() {
                   Library Experience
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                  Years of hands-on experience in public libraries, understanding workflows, challenges, and community needs.
+                  At URL IRL we have years of hands-on experience in public libraries. We understand your workflows, challenges and community needs.
                 </p>
               </div>
             </div>
@@ -79,14 +80,15 @@ export default function WhyMe() {
         <div className="text-center mt-16">
           <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
-              Ready to transform your library's digital experience and give your community the library experience they deserve?
+              Ready to transform your library&apos;s digital experience and give
+              your community the library experience they deserve?
             </p>
-            <a
+            <Link
               href="/contact"
               className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-semibold text-lg rounded-xl transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               Get in touch
-            </a>
+            </Link>
           </div>
         </div>
       </div>
