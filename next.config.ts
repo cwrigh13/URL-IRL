@@ -7,6 +7,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 const nextConfig: NextConfig = {
   output: 'export',
+  basePath: '/URL-IRL',
   trailingSlash: true,
   images: {
     unoptimized: true,
