@@ -24,9 +24,7 @@ export default function CaseStudyGrid() {
           {caseStudies.map((study, index) => (
             <div
               key={study.id}
-              className={`bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden border border-gray-200 dark:border-gray-700 transform hover:-translate-y-2 hover:scale-105 group animate-fade-in ${
-                study.featured ? 'ring-2 ring-blue-500' : ''
-              }`}
+              className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden border border-gray-200 dark:border-gray-700 transform hover:-translate-y-2 hover:scale-105 group animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Featured Badge */}

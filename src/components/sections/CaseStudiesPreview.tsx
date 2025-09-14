@@ -28,9 +28,7 @@ export default function CaseStudiesPreview() {
           {featuredCaseStudies.map((study) => (
             <div
               key={study.id}
-              className={`bg-white dark:bg-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 dark:border-gray-600 ${
-                study.featured ? 'ring-2 ring-blue-500' : ''
-              }`}
+              className="bg-white dark:bg-gray-700 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 dark:border-gray-600"
             >
               {/* Featured Badge */}
               {study.featured && (
