@@ -1,18 +1,23 @@
 @echo off
+echo Building the project...
+npm run build
+
 echo Staging all changes...
 git add .
 
-echo Committing changes...
-git commit -m "feat: Update site with latest changes and optimizations
+echo Checking git status...
+git status --short
 
-- Updated case studies content and structure
-- Added new case study images
-- Optimized build configuration
-- Updated static files and assets
-- Improved site performance and SEO"
+echo Committing changes...
+git commit -m "fix: Update image paths for GitHub Pages deployment
+
+- Fixed all image paths to include /URL-IRL basePath
+- Updated case study images in data file
+- Fixed metadata image paths in all pages
+- Ensured proper image loading on GitHub Pages"
 
 echo Pushing to GitHub...
 git push origin master
 
-echo Deployment complete!
+echo Deployment complete! GitHub Actions will automatically deploy to Pages.
 pause

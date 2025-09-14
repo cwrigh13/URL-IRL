@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: 'URL IRL',
     images: [
       {
-        url: '/about-hero.jpg',
+        url: '/URL-IRL/about-hero.jpg',
         width: 1200,
         height: 630,
         alt: 'My Story - URL IRL',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "My Story | URL IRL | Custom Software for Australian Libraries",
     description: "Discover my journey from librarian to developer, and how my unique background helps me create technology solutions.",
-    images: ['/about-hero.jpg'],
+    images: ['/URL-IRL/about-hero.jpg'],
   },
   alternates: {
     canonical: '/about',

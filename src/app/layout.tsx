@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     siteName: 'URL IRL',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/URL-IRL/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Custom Software for Australian Libraries - URL IRL',

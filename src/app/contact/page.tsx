@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: 'URL IRL',
     images: [
       {
-        url: '/contact-hero.jpg',
+        url: '/URL-IRL/contact-hero.jpg',
         width: 1200,
         height: 630,
         alt: 'Contact - Book a Consultation - URL IRL',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Contact | Book a Consultation | URL IRL",
     description: "Ready to transform your library? Book a free consultation to discuss your technology needs.",
-    images: ['/contact-hero.jpg'],
+    images: ['/URL-IRL/contact-hero.jpg'],
   },
   alternates: {
     canonical: '/contact',

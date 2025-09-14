@@ -18,7 +18,7 @@ export const caseStudies: CaseStudy[] = [
     ],
     technologies: ['Web Application', 'Multilingual Support', 'Responsive Design', 'Data Collection', 'Form Processing'],
     duration: '3 months',
-    image: '/case-studies/closing-the-loop.jpg?v=1',
+    image: '/URL-IRL/case-studies/closing-the-loop.jpg?v=1',
     featured: true,
     fullDescription: `The Digital Tool Library Feedback platform is a lightweight, responsive, and multilingual web application that serves as the central point for all community input regarding the collection. It transforms what was once scattered, verbal feedback into structured, actionable data that library staff can use to improve services and make informed decisions.
 
@@ -101,7 +101,7 @@ For the Library:
     ],
     technologies: ['Native iOS', 'Native Android', 'Web Dashboard', 'Multilingual Support', 'Gamification', 'Analytics', 'WCAG 2.1 AA'],
     duration: '6 months',
-    image: '/case-studies/Fostering-Literacy-Connection.jpg',
+    image: '/URL-IRL/case-studies/Fostering-Literacy-Connection.jpg',
     featured: true,
     fullDescription: `Georges River Reads is a comprehensive, native mobile application for iOS and Android that transforms reading into a fun, gamified, and social experience. It provides a rich feature set for patrons and a powerful analytics backend for library staff.
 
@@ -182,7 +182,7 @@ For the Community:
     ],
     technologies: ['Web-based Interface', 'Multilingual Support', 'Touch-Screen Optimization', 'Visual Design', 'Accessibility Features'],
     duration: '2 months',
-    image: '/case-studies/Simplifying-Self-Service.jpg',
+    image: '/URL-IRL/case-studies/Simplifying-Self-Service.jpg',
     featured: true,
     fullDescription: `Georges River Libraries serves a diverse community where many patrons rely on multifunction devices (MFDs) for essential services like printing job applications, copying identification documents, and scanning important papers. However, the standard manufacturer interfaces on these machines were designed for technical users, not the general public.
 
@@ -262,7 +262,7 @@ For the Library:
     ],
     technologies: ['Vanilla JavaScript (ES6+)', 'PWA (Service Worker)', 'Leaflet.js', 'Content Security Policy', 'WCAG Compliance'],
     duration: '3 months',
-    image: '/case-studies/Connecting-Communities.jpg',
+    image: '/URL-IRL/case-studies/Connecting-Communities.jpg',
     featured: true
   },
   {
@@ -281,7 +281,7 @@ For the Library:
     ],
     technologies: ['Vanilla JavaScript (ES6+)', 'Tailwind CSS', 'Node.js & Express', 'Firebase Firestore', 'Google Gemini API'],
     duration: '3 months',
-    image: '/case-studies/Breaking-Down-Language-Barriers.jpg',
+    image: '/URL-IRL/case-studies/Breaking-Down-Language-Barriers.jpg',
     featured: true
   },
   {
@@ -300,7 +300,7 @@ For the Library:
     ],
     technologies: ['Vite', 'Tailwind CSS', 'Vanilla JavaScript', 'PostCSS', 'Alpine.js'],
     duration: '4 months',
-    image: '/case-studies/Creates.jpg',
+    image: '/URL-IRL/case-studies/Creates.jpg',
     featured: false
   }
 ];

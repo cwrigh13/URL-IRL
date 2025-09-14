@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: 'URL IRL',
     images: [
       {
-        url: '/insights-hero.jpg',
+        url: '/URL-IRL/insights-hero.jpg',
         width: 1200,
         height: 630,
         alt: 'Library Technology Insights - URL IRL',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Insights | Library Technology Blog | URL IRL",
     description: "Stay updated with the latest insights on library technology, digital transformation, and software solutions.",
-    images: ['/insights-hero.jpg'],
+    images: ['/URL-IRL/insights-hero.jpg'],
   },
   alternates: {
     canonical: '/insights',

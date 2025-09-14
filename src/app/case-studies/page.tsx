@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: 'URL IRL',
     images: [
       {
-        url: '/case-studies-hero.jpg',
+        url: '/URL-IRL/case-studies-hero.jpg',
         width: 1200,
         height: 630,
         alt: 'Library Software Case Studies - URL IRL',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Case Studies - Custom Library Software Solutions | URL IRL",
     description: "Explore real-world examples of custom software solutions I've built for Australian libraries.",
-    images: ['/case-studies-hero.jpg'],
+    images: ['/URL-IRL/case-studies-hero.jpg'],
   },
   alternates: {
     canonical: '/case-studies',
