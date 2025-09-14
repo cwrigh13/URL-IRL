@@ -18,22 +18,6 @@ export default function CaseStudiesHero() {
             Explore the custom software solutions that URL IRL have built for Australian public libraries. Each case study demonstrates how understanding both library operations and modern technology creates powerful, user-friendly tools that transform how public libraries serve their communities.
           </p>
           
-          {/* Call-to-Action */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-semibold text-lg rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
-            >
-              Start Your Custom Solution
-            </Link>
-            
-            <Link
-              href="/services"
-              className="inline-flex items-center justify-center px-8 py-4 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 font-medium text-lg rounded-lg transition-all duration-200 hover:border-gray-400 dark:hover:border-gray-500"
-            >
-              View Services
-            </Link>
-          </div>
           
 
         </div>
