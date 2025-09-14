@@ -11,6 +11,7 @@ export interface CaseStudy {
   technologies: string[];
   duration: string;
   image: string;
+  additionalImages?: string[];
   featured: boolean;
   fullDescription?: string;
   technicalDetails?: string;

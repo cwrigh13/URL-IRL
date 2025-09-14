@@ -1,0 +1,57 @@
+| 1 | Immediately | Email | Subject: "Welcome to The Data Point — let’s personalise your feed" • Body: Thank them for joining, set expectations (weekly, practical, no fluff), link to preference centre to choose role/interests. Tokens: {{email}}, {{preferences_link}}. | Preference centre completions; open and click-through rate |
+| 2 | Day 1 | Email | Subject: "3 dashboards leaders use to align their teams" • Body: Curated post roundup (marketing, ops, analytics variants), one-line takeaways, soft CTA to select role for tailored content. Tokens: {{preferences_link}} with UTM. | Click-throughs; role selection conversions |
+| 3 | Day 3 | Email | Subject: "Predictive analytics, explained in 2 minutes" • Body: Simple explainer, 2-min video, CTA: "Get the BI Buyer’s Checklist" (progressive form to capture {{first_name}}, {{job_title}}). | Checklist downloads; profile enrichment rate |
+| 4 | Day 4 | Email (behavioural) | If Step 3 unopened: Subject: "Worth a skim: Forecast your quarter with confidence" • Body: Shorter, single CTA to video. If opened but no download: Subject: "Want the checklist in your inbox?" • Body: Nudge to download. Tokens: {{first_name}} fallback to "there". | Recovery opens; download conversions |
+| 5 | Day 6 | Email | Subject: "Case in brief: Cutting reporting time by 40%" • Body: 1-paragraph story with before/after KPIs; dynamic block by role if known; CTA: "See the 5-report pack." Tokens: {{first_name}}, {{role}}. | Content pack downloads; time-on-page |
+| 6 | Day 7 | Email | Subject: "Live tour invite: From data to decision in minutes (20 min)" • Body: Webinar invite with 2 time options, agenda (connect data, build KPI view, forecast), CTA: register. Tokens: {{first_name}}, {{webinar_link}}. | Webinar registrations |
+| 7 | Day 9 | Email | Subject: "Free templates: KPI dashboards for your team" • Body: Downloadable templates; progressive form to capture {{company_name}} if missing. CTA: "Get the templates." | Template downloads; company capture rate |
+ 8 | Day 10 | CRM (automatic) | Lead scoring + segmentation: Increase score for downloads/webinar; if score ≥ threshold, add to "product-curious" nurture; if low, keep content-only track. | Accurate segment assignment; MQL rate |
+| 9 | Day 11 | Email | Subject: "Try our ROI estimator (no sign-in)" • Body: Interactive calculator, 3 inputs, instant estimate; CTA: "Email me my results" (captures {{email}}, {{company_size}}). | Calculator starts; results sent |
+| 10 | Day 12 | Email (behavioural) | If calculator completed: Subject: "Your ROI estimate and next best step" • Body: Interprets their estimate, suggests next resource by role. If not: Subject: "See your potential ROI in 90 seconds" • Body: Nudge to try. | Post-calculator engagement |
+| 11 | Day 13 | Email | Subject: "Want a tailored dashboard mock-up?" • Body: Offer a lightweight mock using sample KPIs; CTA: pick top 3 KPIs (1-click poll). Tokens: {{first_name}}. | Poll responses; intent signal |
+| 12 | Day 14 | Email | Subject: "Choose your track: Marketing, Ops, or Data" • Body: Personalised journey options; secondary CTA: "Book a 15-min insights call" (soft ask). Tokens: {{first_name}}, {{calendly_link}}. | Track selections; micro-bookings |
+
++### Problem-Aware Evaluator (High Intent) — 14-Day Onboarding
++
++| Step # | Timing | Channel | Core Message/Content Focus | Goal/KPI |
++|---|---|---|---|---|
++| 1 | Immediately | Email | Subject: "Thanks {{first_name}} — book your InsightSphere consultation" • Body: Confirms form receipt, sets expectations, single CTA to {{calendly_link}} for 30-min consult. Tokens: {{first_name}}, {{company_name}}, {{job_title}}. | Booking rate (click-to-schedule) |
++| 2 | Immediately | CRM Task for SDR | Call within 15 minutes • Script: Thank them, restate their stated challenge (if captured), propose 2 time slots; if no answer, leave concise voicemail and send follow-up email template. Tokens: {{first_name}}, {{company_name}}, {{phone}}. | Connection rate; voicemail left |
++| 3 | 30 minutes | Email (AE-intro) | Subject: "Two quick options for {{company_name}}" • Body: Personal intro from AE, offers two specific time slots, reiterates value; CTA: reply or one-click Calendly. Tokens: {{first_name}}, {{company_name}}, {{ae_name}}, {{calendly_link}}. | Reply rate; bookings |
++| 4 | Day 1 | LinkedIn Task | Sales Navigator: Send connection request + note • Message references their {{job_title}} priority, mentions consultation request, offers relevant case study. Tokens: {{first_name}}, {{job_title}}, {{industry}} (if known). | Connection acceptance |
++| 5 | Day 1 | Email (Case Study) | Subject: "How a {{industry}} team cut cycle time by 40%" • Body: 3-bullet outcomes, 60-second read PDF; CTA: "Share your top KPI to focus demo." Tokens: {{first_name}}, {{industry}}. | Case study views; KPI reply |
++| 6 | Day 2 | CRM Task for SDR | Second call attempt • Goal: Confirm stakeholders and data sources (e.g., Salesforce, HubSpot, Snowflake); log notes to Salesforce. Tokens: {{company_name}}. | Discovery data captured |
++| 7 | Day 2 | Email (Video) | Subject: "90‑second product walk-through before we meet" • Body: Short video of data connection → dashboard → forecast; CTA: reply with primary data source. Tokens: {{first_name}}. | Video plays; replies |
++| 8 | Day 3 | Form (HubSpot) | Pre-discovery survey (2 questions) • Ask: top KPIs, data source; optional team size. Route answers to AE. Tokens: {{first_name}}, {{company_name}}. | Survey completion |
++| 9 | Day 4 | LinkedIn InMail | Message: "Sketching your demo around {{kpi_1}} and {{data_source}} — 20 mins?" • Include mini-ROI snippet; link Calendly. Tokens: {{first_name}}, {{kpi_1}}, {{data_source}}, {{calendly_link}}. | Meeting booked |
++| 10 | Day 5 | Email (ROI Pre-read) | Subject: "ROI model assumptions for {{company_name}} (review before we meet)" • Body: Transparent assumptions, editable Google Sheet; CTA: confirm/revise. Tokens: {{first_name}}, {{company_name}}. | Pre-read views; edits |
++| 11 | Day 7 | CRM Task for AE | Third call attempt + stakeholder loop-in • Ask to include ops/data counterpart; propose mutual action plan after meeting. Tokens: {{first_name}}, {{company_name}}. | Multi-threading initiated |
++| 12 | Day 10 | Email (Comparator Guide) | Subject: "Evaluating AI BI platforms: a practical checklist" • Body: Neutral, vendor-agnostic guide; CTA: download. Tokens: {{first_name}}. | Guide downloads |
++| 13 | Day 12 | Email (Social Proof) | Subject: "Why {{peer_company}} chose InsightSphere" • Body: Logo strip + 3 quantified outcomes; CTA: book. Tokens: {{first_name}}, {{industry_peer}}. | Booking uplift |
++| 14 | Day 14 | Email (Polite Breakup) | Subject: "Should I close the loop, {{first_name}}?" • Body: Offers three buttons: still evaluating / wrong person / book now; respects their time. Tokens: {{first_name}}. | Clear next step; disqualification clarity |
++
++### Warm Connection (Context-Rich Intent) — 14-Day Onboarding
++
++| Step # | Timing | Channel | Core Message/Content Focus | Goal/KPI |
++|---|---|---|---|---|
++| 1 | Immediately | CRM Task for Rep | Send LinkedIn DM referencing the meeting • Message: "Great chatting at {{conference_name}} about {{topic_discussed}}. Here’s that resource pack." Include short URL with UTM source. Tokens: {{first_name}}, {{rep_name}}, {{conference_name}}, {{topic_discussed}}. | Reply rate; link clicks |
++| 2 | Immediately | LinkedIn Task | Send connection request (if not connected) with note • "Let’s keep the conversation going on {{topic_discussed}} — can share a 90‑sec overview." Tokens: {{first_name}}, {{rep_name}}. | Connection acceptance |
++| 3 | Day 1 | LinkedIn DM | Share 90‑sec personalised video • Content: Recap their use case, show 1–2 relevant screens; CTA: "Worth 20 mins to tailor this for {{company_name}}?" Tokens: {{first_name}}, {{company_name}}, {{rep_name}}, {{calendly_link}}. | Video plays; booking |
++| 4 | Day 2 | Landing Page + Form | Resource pack landing page personalised to conference • Content kit (slides, one-pagers, session notes); soft gate to capture {{work_email}} if not known. Tokens: {{conference_name}}, {{rep_name}}. | Email capture rate |
++| 5 | Day 3 | Email (if email captured) | Subject: "Great meeting at {{conference_name}}, {{first_name}} — resources inside" • Body: Curated links matching {{topic_discussed}}; CTA: pick top KPI via 1-click poll. Tokens: {{first_name}}, {{conference_name}}, {{topic_discussed}}. | Poll responses |
++| 6 | Day 4 | CRM Task for Rep | Share mini-deck tailored to persona • Action: Send 3-slide deck (problem framing, approach, outcomes) via LinkedIn DM/email. Tokens: {{job_title}}, {{industry}}. | Deck views |
++| 7 | Day 5 | Email or DM | Subject/Message: "Sketching a sample dashboard for {{company_name}}" • Body: Ask for 2–3 KPIs and primary data source to mock a view; link to 30‑sec form. Tokens: {{first_name}}, {{company_name}}. | Form completions |
++| 8 | Day 7 | Email | Subject: "Private roundtable: peers on {{topic_discussed}} (12 seats)" • Body: Invite-only small group session; CTA: register. Tokens: {{first_name}}, {{conference_name}}. | Roundtable registrations |
++| 9 | Day 8 | CRM Task for Rep | Share dashboard mock or annotated screenshot • Action: Send image with 2–3 insights; ask, "Is this directionally right?" Tokens: {{company_name}}, {{kpi_1}}. | Positive responses |
++| 10 | Day 10 | Email | Subject: "Two quick options this week?" • Body: Propose 2 specific slots; fallback Calendly link. Tokens: {{first_name}}, {{calendly_link}}. | Booking rate |
++| 11 | Day 11 | LinkedIn DM | Nudge with value hook • "If we connect {{data_source}} you’ll see forecast accuracy on {{kpi_1}} in minutes." CTA: 20‑min call. Tokens: {{data_source}}, {{kpi_1}}. | Replies |
++| 12 | Day 12 | CRM (Salesforce) | Update contact and influence attribution • Ensure UTM from QR/URL recorded; associate interactions to campaign. | Attribution accuracy |
++| 13 | Day 13 | Email | Subject: "Summary of what we’ve shared + next step" • Body: Bullet recap; CTA: confirm if now or next quarter; alternative: loop in colleague. Tokens: {{first_name}}. | Next-step clarity |
++| 14 | Day 14 | CRM Task for Rep | Warm close/hand-off • Action: If not ready, set follow-up cadence, share newsletter subscription link; add notes to Salesforce. | Future pipeline quality |
++
++### Executive Summary
++Each funnel aligns to intent and context. The Information Seeker receives low-friction education, progressive profiling, and self-serve tools to build problem and solution awareness before a soft consult nudge. The Problem-Aware Evaluator gets rapid, multi-channel scheduling pathways (email, phone, LinkedIn), role/industry proof, and pre-read materials to compress time-to-value and improve show rates. The Warm Connection leverages the human context from {{conference_name}} and {{rep_name}} with personal video, tailored assets, and lightweight co-creation (mock dashboards) to deepen rapport and secure a meeting.
++
++This segmentation outperforms generic onboarding by matching commitment to intent, using the right channels at the right moments, and capturing the minimum data needed to personalise future steps—maximising engagement, accelerating qualified meetings, and preserving goodwill.
++
++

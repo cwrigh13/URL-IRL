@@ -7,7 +7,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '/URL-IRL',
+  basePath: process.env.NODE_ENV === 'production' ? '/URL-IRL' : '',
   trailingSlash: true,
   images: {
     unoptimized: true,

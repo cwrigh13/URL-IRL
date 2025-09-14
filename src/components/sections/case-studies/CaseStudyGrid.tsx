@@ -38,17 +38,48 @@ export default function CaseStudyGrid() {
                 </div>
               )}
 
-              {/* Image */}
+              {/* Image Gallery */}
               <div className="relative h-48 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-700 dark:to-gray-800 overflow-hidden group-hover:scale-110 transition-transform duration-500">
                 {study.image ? (
-                  <Image
-                    src={study.image}
-                    alt={`${study.title} - ${study.library} case study`}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    priority={study.featured}
-                  />
+                  <div className="relative w-full h-full">
+                    {/* Main Image */}
+                    <Image
+                      src={study.image}
+                      alt={`${study.title} - ${study.library} case study`}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      priority={study.featured}
+                    />
+                    
+                    {/* Additional Images Overlay */}
+                    {study.additionalImages && study.additionalImages.length > 0 && (
+                      <div className="absolute bottom-2 right-2 flex space-x-1">
+                        {study.additionalImages.slice(0, 2).map((additionalImage, imgIndex) => (
+                          <div
+                            key={imgIndex}
+                            className="w-8 h-8 rounded border-2 border-white shadow-lg overflow-hidden"
+                          >
+                            <Image
+                              src={additionalImage}
+                              alt={`Additional view of ${study.title}`}
+                              width={32}
+                              height={32}
+                              className="object-cover w-full h-full"
+                              sizes="32px"
+                            />
+                          </div>
+                        ))}
+                        {study.additionalImages.length > 2 && (
+                          <div className="w-8 h-8 rounded border-2 border-white shadow-lg bg-gray-600 flex items-center justify-center">
+                            <span className="text-white text-xs font-bold">
+                              +{study.additionalImages.length - 2}
+                            </span>
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </div>
                 ) : (
                   <div className="absolute inset-0 flex items-center justify-center">
                     <svg
@@ -147,69 +178,6 @@ export default function CaseStudyGrid() {
           ))}
         </div>
 
-        {/* Related Services Section */}
-        <div className="mt-20 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-            Ready to Build Your Custom Solution?
-          </h3>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-            Each case study represents a unique challenge solved through innovative technology. 
-            Let's discuss how we can solve your library's specific needs.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/services"
-              className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-all duration-300 transform hover:scale-105 hover:-translate-y-0.5 shadow-md hover:shadow-lg"
-            >
-              View Our Services
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center px-6 py-3 border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 font-medium rounded-lg transition-all duration-300 hover:border-gray-400 dark:hover:border-gray-500 hover:scale-105 hover:-translate-y-0.5"
-            >
-              Start Your Project
-            </Link>
-          </div>
-        </div>
-
-        {/* Additional Internal Links */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Link
-            href="/about"
-            className="group p-6 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-md transition-all duration-300"
-          >
-            <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
-              Our Story
-            </h4>
-            <p className="text-gray-600 dark:text-gray-300 text-sm">
-              Learn about my journey from librarian to developer and why this background matters for your project.
-            </p>
-          </Link>
-          
-          <Link
-            href="/insights"
-            className="group p-6 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-md transition-all duration-300"
-          >
-            <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
-              Library Technology Insights
-            </h4>
-            <p className="text-gray-600 dark:text-gray-300 text-sm">
-              Read our latest thoughts on library technology trends and digital transformation strategies.
-            </p>
-          </Link>
-          
-          <Link
-            href="/contact"
-            className="group p-6 bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-md transition-all duration-300"
-          >
-            <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-200">
-              Get in Touch
-            </h4>
-            <p className="text-gray-600 dark:text-gray-300 text-sm">
-              Ready to discuss your library's specific needs? Book a free consultation today.
-            </p>
-          </Link>
-        </div>
 
       </div>
     </section>
